@@ -1,0 +1,53 @@
+Day 1 Task:
+
+1. Difference between HTTP1 and HTTP2?
+
+HTTP used for interaction between client and server sides. Here mainly focusing two stages 1. HTTP1.1 and 2.HTTP2.0
+
+HTTP1.1 :
+Client has send request to server and server respond back as per the request. In single connection we can send and receive several request and response like persistent connection.
+Drawback of HTTP1.1 It transfer all the requests and the responses in plain text message and head of line blocking in which
+TCP connection is blocked all other requests until the response does not receive. It compress by itself and uses requests 
+resource Inlining for use getting multiple pages.
+
+HTTP2.0 :
+It transform all request and response in binary format and uses SPDY protocol. It works on fully multiplexed.
+(one TCP connection required multiple request)
+For data compression it use HPACK and uses PUSH frame by server collects all multiple pages.
+
+
+HTTP/1.1
+    -It works on textual format.
+    -It compresses data by itself
+
+
+HTTP/2
+    -It works on binary protocol
+    -It uses HPACK for data compression
+
+
+
+2. objects and its internal representation in Javascript:
+
+Objects contain any combination of primitive data type like Number, String, Boolean, null, undefined and symbol. It is unordered collection of data in the form of key:value pairs. These keys can be variables or functions and are called properties and methods.
+
+Syntax for adding a property to an object,
+ObjectName.ObjectProperty = propertyValue
+
+Both the object name and property name are case sensitive. You can define a property by assigning it a value.
+E.g: var myBike =new Object();
+myBike.color =”Black”;
+ 
+And unassigned properties of an object are undefined myBike.color;
+
+Properties of JavaScript objects can also be accessed or set using a bracket notation.
+
+myBike[“color”]= “Black”
+
+One of the way to create object is Key:value pairs,
+
+Let details ={name: “gokul”, age : “28”}
+
+Constructor is used for creating class variable
+
+this. Keyword used for accessing object variable. 
